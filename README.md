@@ -1,4 +1,4 @@
-![Banner_junior](https://github.com/Harlock-code/devops-junior-lab/blob/main/screenshots/bbaner_junior.png?raw=true)
+![Junior_Lab_Banner](https://github.com/Harlock-code/devops-junior-lab/blob/main/screenshots/bbaner_junior.png?raw=true)
 
 ![Linux](https://img.shields.io/badge/Linux-Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-Containers-2496ED?style=for-the-badge&logo=docker&logoColor=white)
@@ -20,132 +20,132 @@
 
 # DevOps Junior Lab
 
-Repositorio orientado a proyectos DevOps y SysAdmin Junior con escenarios prácticos, pequeños y fáciles de explicar en entrevistas técnicas.
+Repository focused on hands-on DevOps and Junior SysAdmin projects with practical, small, and easy-to-explain scenarios for technical interviews.
 
-El objetivo NO es construir una mega arquitectura enterprise, sino demostrar conocimientos reales mediante proyectos simples, visuales y reproducibles.
-
----
-
-# Objetivos del laboratorio
-
-* Aprender workflows DevOps reales
-* Practicar troubleshooting
-* Automatizar tareas Linux
-* Trabajar con Docker y observabilidad
-* Aprender Infrastructure as Code
-* Construir un portfolio técnico profesional
-* Mejorar habilidades para entrevistas IT
+The goal is NOT to build a large enterprise architecture, but to demonstrate real knowledge through simple, visual, and reproducible projects.
 
 ---
 
-# Tecnologías utilizadas
+# Lab Objectives
 
-| Categoría      | Tecnologías                |
+* Learn real DevOps workflows
+* Practice troubleshooting
+* Automate Linux tasks
+* Work with Docker and observability
+* Learn Infrastructure as Code
+* Build a professional technical portfolio
+* Improve IT interview skills
+
+---
+
+# Technologies Used
+
+| Category       | Technologies               |
 | -------------- | -------------------------- |
 | Containers     | Docker, Docker Compose     |
-| Observabilidad | Prometheus, Grafana        |
+| Observability  | Prometheus, Grafana        |
 | Logging        | Loki, Promtail             |
-| Automatización | Ansible                    |
+| Automation     | Ansible                    |
 | IaC            | Terraform                  |
 | CI/CD          | GitHub Actions             |
-| Seguridad      | UFW, Fail2ban              |
+| Security       | UFW, Fail2ban              |
 | Networking     | Nginx Reverse Proxy        |
 | Linux          | Ubuntu Server, Bash, rsync |
 
 ---
 
-# Proyectos incluidos
+# Included Projects
 
-| Proyecto             | Descripción                                    |
-| -------------------- | ---------------------------------------------- |
-| docker-basic         | Dockerfile, Docker Compose y despliegue básico |
-| github-actions-basic | Pipeline CI básica con GitHub Actions          |
-| monitoring-basic     | Prometheus + Grafana + Node Exporter           |
-| logging-basic        | Loki + Promtail + Grafana                      |
-| terraform-basic      | Introducción a Terraform e IaC                 |
-| ansible-basic        | Automatización Nginx con Ansible               |
-| nginx-basic          | Reverse proxy con Nginx y Docker               |
-| security-basic       | Hardening Linux básico con UFW y Fail2ban      |
-| backup-basic         | Backup y restore con rsync                     |
-| troubleshooting      | Documentación de errores y debugging real      |
-
----
-
-# Arquitectura general
-
-![Diagrama_lab](https://github.com/Harlock-code/devops-junior-lab/blob/main/screenshots/diagrama,lab,junior.png?raw=true).
+| Project              | Description                                      |
+| -------------------- | ------------------------------------------------ |
+| docker-basic         | Dockerfile, Docker Compose, and basic deployment |
+| github-actions-basic | Basic CI pipeline with GitHub Actions            |
+| monitoring-basic     | Prometheus + Grafana + Node Exporter             |
+| logging-basic        | Loki + Promtail + Grafana                        |
+| terraform-basic      | Introduction to Terraform and IaC                |
+| ansible-basic        | Nginx automation with Ansible                    |
+| nginx-basic          | Reverse proxy with Nginx and Docker              |
+| security-basic       | Basic Linux hardening with UFW and Fail2ban      |
+| backup-basic         | Backup and restore with rsync                    |
+| troubleshooting      | Real error documentation and debugging           |
 
 ---
 
-# Habilidades demostradas
+# General Architecture
+
+![Lab_Diagram](https://github.com/Harlock-code/devops-junior-lab/blob/main/screenshots/diagrama,lab,junior.png?raw=true)
+
+---
+
+# Skills Demonstrated
 
 ## DevOps
 
-* CI/CD básico
-* Observabilidad
-* Logging centralizado
+* Basic CI/CD
+* Observability
+* Centralized logging
 * Infrastructure as Code
-* Automatización
+* Automation
 * Networking
 * Reverse Proxy
 
 ## Linux / SysAdmin
 
 * Bash scripting
-* Servicios Linux
-* Seguridad básica
-* Firewall UFW
+* Linux services
+* Basic security
+* UFW firewall
 * Fail2ban
-* Backup y restore
+* Backup and restore
 * Troubleshooting
 
-## Troubleshooting real
+## Real Troubleshooting
 
-Durante el laboratorio se resolvieron problemas reales relacionados con:
+During the lab, real issues were solved related to:
 
 * Docker Compose
-* Redes Docker
-* Loki y Promtail
+* Docker networks
+* Loki and Promtail
 * Terraform
 * GitHub Actions
-* Permisos sudo
-* Paths Linux
-* Git y estructuras vacías
+* sudo permissions
+* Linux paths
+* Git and empty structures
 
 ---
 
-# Filosofía del proyecto
+# Project Philosophy
 
-Todos los proyectos siguen la misma filosofía:
+All projects follow the same philosophy:
 
-* simples
-* modulares
-* fáciles de entender
-* fáciles de explicar
-* reproducibles
-* documentados
-* visuales
+* simple
+* modular
+* easy to understand
+* easy to explain
+* reproducible
+* documented
+* visual
 
-El objetivo es demostrar conocimientos prácticos y pensamiento técnico real.
+The goal is to demonstrate practical knowledge and real technical thinking.
 
 ---
 
-# Próximos pasos
+# Next Steps
 
-Posibles evoluciones futuras:
+Possible future improvements:
 
-* CI/CD automático con deploy Docker
-* Kubernetes básico
-* Integración cloud
+* Automated CI/CD with Docker deployment
+* Basic Kubernetes
+* Cloud integration
 * Alerting
-* Monitoring avanzado
-* Automatización multi-host
-* Integración Proxmox
+* Advanced monitoring
+* Multi-host automation
+* Proxmox integration
 
 ---
 
-# Estado del laboratorio
+# Lab Status
 
-Proyecto en crecimiento continuo.
+Project under continuous development.
 
-Todos los módulos actuales funcionan correctamente y han sido probados en entorno Linux real.
+All current modules work correctly and have been tested in a real Linux environment.
