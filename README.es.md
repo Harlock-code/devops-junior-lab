@@ -20,7 +20,7 @@
 
 # DevOps Junior Lab
 
-Repositorio orientado a proyectos DevOps y SysAdmin Junior con escenarios prácticos, pequeños y fáciles de explicar en entrevistas técnicas.
+Repositorio orientado a proyectos DevOps y SysAdmin Junior con escenarios prácticos y pequeños.
 
 El objetivo NO es construir una mega arquitectura enterprise, sino demostrar conocimientos reales mediante proyectos simples, visuales y reproducibles.
 
