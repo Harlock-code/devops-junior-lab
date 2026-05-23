@@ -1,0 +1,19 @@
+services:
+  loki:
+    image: grafana/loki:latest
+    container_name: logging-loki
+    ports:
+      - "3100:3100"
+    volumes:
+      - ./loki/loki-config.yml:/etc/loki/local-config.yaml:ro
+    command: -config.file=/etc/loki/local-config.yaml
+    restart: unless-stopped
+
+  promtail:
+    image: grafana/promtail:latest
+    container_name: logging-promtail
+    volumes:
+      - ./promtail/promtail-config.yml:/etc/promtail/config.yml:ro
+      - /var/lib/docker/containers:/var/log/docker-containers:ro
+    command: -config.file=/etc/promtail/config.yml
+    restart: unless-stopped
