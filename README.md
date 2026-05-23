@@ -53,37 +53,7 @@ El objetivo NO es construir una mega arquitectura enterprise, sino demostrar con
 
 # Arquitectura general
 
-```text
-                +----------------+
-                | GitHub Actions |
-                +--------+-------+
-                         |
-                         v
-+------------------------------------------------+
-|                DevOps Junior Lab               |
-+------------------------------------------------+
-|                                                |
-| Docker                                         |
-| ├── Nginx Reverse Proxy                        |
-| ├── Prometheus                                 |
-| ├── Grafana                                    |
-| ├── Loki                                       |
-| └── Promtail                                   |
-|                                                |
-| Terraform                                      |
-| └── Infrastructure as Code                     |
-|                                                |
-| Ansible                                        |
-| └── Automatización Linux                       |
-|                                                |
-| Security                                       |
-| ├── UFW                                        |
-| └── Fail2ban                                   |
-|                                                |
-| Backup                                         |
-| └── rsync                                      |
-+------------------------------------------------+
-```
+![Diagrama_lab](https://github.com/Harlock-code/devops-junior-lab/blob/main/screenshots/diagrama,lab,junior.png?raw=true).
 
 ---
 
