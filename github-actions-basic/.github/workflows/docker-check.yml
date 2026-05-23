@@ -1,0 +1,24 @@
+name: Docker Compose Validation
+
+on:
+  push:
+    paths:
+      - 'docker-basic/**'
+
+jobs:
+  validate-docker:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Show repository structure
+        run: tree
+
+      - name: Validate Docker Compose file
+        run: |
+          docker compose -f docker-basic/docker-compose.yml config
+
+      - name: Validation completed
+        run: echo "Docker Compose validation successful"
