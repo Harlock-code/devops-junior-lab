@@ -1,5 +1,23 @@
 ![Banner_junior](https://github.com/Harlock-code/devops-junior-lab/blob/main/screenshots/bbaner_junior.png?raw=true)
 
+![Linux](https://img.shields.io/badge/Linux-Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Containers-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Docker Compose](https://img.shields.io/badge/Docker_Compose-Orchestration-1D63ED?style=for-the-badge&logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-CI/CD-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-IaC-844FBA?style=for-the-badge&logo=terraform&logoColor=white)
+![Ansible](https://img.shields.io/badge/Ansible-Automation-EE0000?style=for-the-badge&logo=ansible&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-Reverse_Proxy-009639?style=for-the-badge&logo=nginx&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-Monitoring-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-Dashboards-F46800?style=for-the-badge&logo=grafana&logoColor=white)
+![Loki](https://img.shields.io/badge/Loki-Logging-F2CC0C?style=for-the-badge&logo=grafana&logoColor=black)
+![Promtail](https://img.shields.io/badge/Promtail-Log_Collector-F2CC0C?style=for-the-badge&logo=grafana&logoColor=black)
+![UFW](https://img.shields.io/badge/UFW-Firewall-4B275F?style=for-the-badge&logo=ubuntu&logoColor=white)
+![Fail2ban](https://img.shields.io/badge/Fail2ban-Security-CC0000?style=for-the-badge)
+![Bash](https://img.shields.io/badge/Bash-Scripting-121011?style=for-the-badge&logo=gnubash&logoColor=white)
+![rsync](https://img.shields.io/badge/Rsync-Backup-555555?style=for-the-badge)
+![Git](https://img.shields.io/badge/Git-Version_Control-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Troubleshooting](https://img.shields.io/badge/Troubleshooting-Real_World_Debugging-6A1B9A?style=for-the-badge)
+
 # DevOps Junior Lab
 
 Repositorio orientado a proyectos DevOps y SysAdmin Junior con escenarios prácticos, pequeños y fáciles de explicar en entrevistas técnicas.
