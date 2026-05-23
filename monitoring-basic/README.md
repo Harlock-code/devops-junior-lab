@@ -1,22 +1,22 @@
 # Monitoring Basic
 
-Mini proyecto DevOps Junior para desplegar un stack básico de monitorización usando Prometheus, Grafana y Node Exporter.
+Mini DevOps Junior project focused on deploying a basic monitoring stack using Prometheus, Grafana, and Node Exporter.
 
 ---
 
-# Objetivo
+# Objective
 
-Aprender conceptos básicos de observabilidad y métricas del sistema mediante herramientas utilizadas en entornos DevOps reales.
+Learn the basic concepts of observability and system metrics using tools commonly used in real DevOps environments.
 
-El stack monitoriza:
+The stack monitors:
 - CPU
 - RAM
-- métricas Linux
-- actividad del sistema
+- Linux metrics
+- system activity
 
 ---
 
-# Tecnologías
+# Technologies
 
 - Docker
 - Docker Compose
@@ -27,7 +27,7 @@ El stack monitoriza:
 
 ---
 
-# Arquitectura
+# Architecture
 
 ```text
 Node Exporter
@@ -41,7 +41,7 @@ Grafana Dashboard
 
 ---
 
-# Estructura
+# Structure
 
 ```text
 monitoring-basic/
@@ -55,17 +55,17 @@ monitoring-basic/
 
 ---
 
-# Servicios desplegados
+# Deployed Services
 
-| Servicio | Puerto | Función |
+| Service | Port | Function |
 |---|---|---|
-| Prometheus | 9090 | Recolección de métricas |
-| Node Exporter | 9100 | Métricas Linux |
-| Grafana | 3001 | Dashboards y visualización |
+| Prometheus | 9090 | Metrics collection |
+| Node Exporter | 9100 | Linux metrics |
+| Grafana | 3001 | Dashboards and visualization |
 
 ---
 
-# Despliegue
+# Deployment
 
 ```bash
 docker-compose up -d
@@ -73,21 +73,21 @@ docker-compose up -d
 
 ---
 
-# Verificación
+# Verification
 
-## Comprobar contenedores
+## Check containers
 
 ```bash
 docker ps
 ```
 
-## Verificar Prometheus
+## Verify Prometheus
 
 ```text
-http://IP_DEL_SERVIDOR:9090
+http://SERVER_IP:9090
 ```
 
-Targets esperados:
+Expected targets:
 
 ```text
 prometheus → UP
@@ -98,13 +98,13 @@ node-exporter → UP
 
 # Grafana
 
-Acceso:
+Access:
 
 ```text
-http://IP_DEL_SERVIDOR:3001
+http://SERVER_IP:3001
 ```
 
-Credenciales iniciales:
+Default credentials:
 
 ```text
 admin / admin
@@ -112,9 +112,9 @@ admin / admin
 
 ---
 
-# Configuración de datasource
+# Datasource Configuration
 
-Tipo:
+Type:
 
 ```text
 Prometheus
@@ -128,16 +128,16 @@ http://prometheus:9090
 
 ---
 
-# Métricas utilizadas
+# Metrics Used
 
-Ejemplo de query:
+Example query:
 
 ```text
 node_cpu_seconds_total
 ```
 
-Esta métrica permite visualizar:
-- uso CPU
+This metric allows visualization of:
+- CPU usage
 - idle
 - system
 - user
@@ -145,21 +145,21 @@ Esta métrica permite visualizar:
 
 ---
 
-# Utilidad real
+# Real-World Use Case
 
-Este stack representa una base de observabilidad utilizada en entornos DevOps modernos para:
+This stack represents a basic observability platform commonly used in modern DevOps environments for:
 
-- monitorización
+- monitoring
 - troubleshooting
-- análisis de rendimiento
-- alertas
+- performance analysis
+- alerting
 - dashboards
 
 ---
 
-# Resultado
+# Result
 
-Stack básico de monitorización funcionando correctamente con métricas reales del sistema.
+Basic monitoring stack successfully working with real system metrics.
 
 ---
 
@@ -173,6 +173,8 @@ Stack básico de monitorización funcionando correctamente con métricas reales 
 
 ![Prometheus Targets](https://github.com/Harlock-code/devops-junior-lab/blob/main/monitoring-basic/screenshots/2026-05-23%2012_39_12-Debian12%20(Instant%C3%A1nea%203)%20%5BCorriendo%5D%20-%20Oracle%20VirtualBox.png?raw=true)
 
-# Estado
+---
 
-Proyecto completado correctamente.
+# Status
+
+Project completed successfully.
