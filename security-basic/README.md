@@ -1,27 +1,27 @@
 # Security Basic
 
-Mini proyecto DevOps Junior para aplicar hardening básico en Linux usando Ansible.
+Mini DevOps Junior project focused on applying basic Linux hardening using Ansible.
 
-## Objetivo
+## Objective
 
-Automatizar una configuración básica de seguridad en Linux mediante Ansible.
+Automate a basic Linux security configuration using Ansible.
 
-El proyecto aplica:
+The project applies:
 
-- Instalación de UFW
-- Instalación de Fail2ban
-- Reglas básicas de firewall
-- Política deny incoming
-- Servicios de seguridad activos
+- UFW installation
+- Fail2ban installation
+- Basic firewall rules
+- Deny incoming policy
+- Active security services
 
-## Tecnologías
+## Technologies
 
 - Ansible
 - Linux
 - UFW
 - Fail2ban
 
-## Estructura
+## Structure
 
 ```text
 security-basic/
@@ -31,28 +31,28 @@ security-basic/
 └── README.md
 ```
 
-## Ejecución
+## Execution
 
 ```bash
 ansible-playbook playbooks/security-basic.yml --ask-become-pass
 ```
 
-## Validación
+## Validation
 
 ```bash
 sudo ufw status verbose
 systemctl status fail2ban --no-pager
 ```
 
-## Resultado
+## Result
 
-UFW activo con política por defecto:
+UFW active with default policy:
 
 ```text
 Default: deny (incoming), allow (outgoing), deny (routed)
 ```
 
-Puertos permitidos:
+Allowed ports:
 
 ```text
 22/tcp
@@ -60,31 +60,32 @@ Puertos permitidos:
 443/tcp
 ```
 
-Fail2ban activo:
+Fail2ban active:
 
 ```text
 Active: active (running)
 ```
-## Screenshoot
+
+## Screenshot
 
 ![Security_bash](https://github.com/Harlock-code/devops-junior-lab/blob/main/security-basic/screenshots/security.png?raw=true)
 
 ---
 
-## Troubleshooting real
+## Real Troubleshooting
 
-Durante la ejecución apareció este warning:
+During execution, this warning appeared:
 
 ```text
 No inventory was parsed, only implicit localhost is available
 ```
 
-Esto ocurre porque el playbook está diseñado para ejecutarse localmente contra `localhost`.
+This happens because the playbook is designed to run locally against `localhost`.
 
-## Utilidad real
+## Real-World Use Case
 
-Este tipo de automatización se usa para aplicar configuraciones básicas de seguridad en servidores Linux de forma repetible y controlada.
+This type of automation is used to apply basic security configurations on Linux servers in a repeatable and controlled way.
 
-## Estado
+## Status
 
-Proyecto completado correctamente.
+Project completed successfully.
