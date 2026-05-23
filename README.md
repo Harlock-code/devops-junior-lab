@@ -48,8 +48,31 @@ devops-junior-lab/
 ├── backup-basic/
 └── troubleshooting/
 ```
-
 ---
+
+# Proyectos incluidos
+
+## Docker Basic
+Mini despliegue de Nginx usando Docker y Docker Compose.
+
+Tecnologías:
+- Docker
+- Docker Compose
+- Nginx
+- Linux
+
+Ruta:
+```text
+docker-basic/
+```
+
+Características:
+- Dockerfile personalizado
+- Logs
+- Exposición de puertos
+- Troubleshooting real
+- Validación HTTP
+
 
 # Filosofía del proyecto
 
