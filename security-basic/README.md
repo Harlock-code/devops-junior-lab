@@ -65,6 +65,11 @@ Fail2ban activo:
 ```text
 Active: active (running)
 ```
+## Screenshoot
+
+![Grafana Dashboard](https://github.com/Harlock-code/devops-junior-lab/blob/main/monitoring-basic/screenshots/2026-05-23%2012_33_30-Debian12%20(Instant%C3%A1nea%203)%20%5BCorriendo%5D%20-%20Oracle%20VirtualBox.png?raw=true)
+
+---
 
 ## Troubleshooting real
 
