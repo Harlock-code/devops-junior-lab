@@ -1,24 +1,24 @@
 # Terraform Basic
 
-Mini proyecto DevOps Junior para aprender conceptos básicos de Infrastructure as Code usando Terraform.
+Mini DevOps Junior project focused on learning basic Infrastructure as Code concepts using Terraform.
 
 ---
 
-# Objetivo
+# Objective
 
-Comprender el workflow básico de Terraform mediante la creación y destrucción de recursos locales.
+Understand the basic Terraform workflow by creating and destroying local resources.
 
-El proyecto demuestra:
+The project demonstrates:
 - providers
 - resources
 - variables
 - outputs
 - state
-- lifecycle Terraform
+- Terraform lifecycle
 
 ---
 
-# Tecnologías
+# Technologies
 
 - Terraform
 - Linux
@@ -26,7 +26,7 @@ El proyecto demuestra:
 
 ---
 
-# Estructura
+# Structure
 
 ```text
 terraform-basic/
@@ -39,111 +39,111 @@ terraform-basic/
 
 ---
 
-# Archivos principales
+# Main Files
 
 ## main.tf
 
-Define el recurso principal:
+Defines the main resource:
 
 ```hcl
 resource "local_file" "server_info"
 ```
 
-Terraform genera automáticamente un archivo local usando variables.
+Terraform automatically generates a local file using variables.
 
 ---
 
 ## variables.tf
 
-Define variables reutilizables:
+Defines reusable variables:
 
-- nombre servidor
-- entorno
-- IP
+- server name
+- environment
+- IP address
 
 ---
 
 ## outputs.tf
 
-Muestra información útil después del apply.
+Displays useful information after running apply.
 
 ---
 
-# Workflow Terraform
+# Terraform Workflow
 
-## Inicializar
+## Initialize
 
 ```bash
 terraform init
 ```
 
-Descarga providers y prepara el entorno.
+Downloads providers and prepares the environment.
 
 ---
 
-## Ver plan
+## View plan
 
 ```bash
 terraform plan
 ```
 
-Terraform calcula cambios sin aplicarlos.
+Terraform calculates changes without applying them.
 
 ---
 
-## Aplicar cambios
+## Apply changes
 
 ```bash
 terraform apply
 ```
 
-Crea recursos reales.
+Creates real resources.
 
 ---
 
-## Destruir recursos
+## Destroy resources
 
 ```bash
 terraform destroy
 ```
 
-Elimina automáticamente la infraestructura creada.
+Automatically removes the created infrastructure.
 
 ---
 
 # Terraform State
 
-Terraform genera:
+Terraform generates:
 
 ```text
 terraform.tfstate
 ```
 
-Este archivo almacena:
-- estado real
-- recursos creados
+This file stores:
+- real state
+- created resources
 - metadata
-- sincronización infraestructura
+- infrastructure synchronization
 
 ---
 
-# Utilidad real
+# Real-World Use Case
 
-Terraform se utiliza en entornos DevOps para automatizar:
+Terraform is used in DevOps environments to automate:
 
-- máquinas virtuales
-- redes
+- virtual machines
+- networks
 - cloud
 - Kubernetes
-- almacenamiento
+- storage
 - DNS
-- infraestructura completa
+- complete infrastructure
 
 ---
 
-# Resultado
+# Result
 
-Terraform funcionando correctamente con:
+Terraform working correctly with:
 - variables
 - outputs
 - state
@@ -151,6 +151,6 @@ Terraform funcionando correctamente con:
 
 ---
 
-# Estado
+# Status
 
-Proyecto completado correctamente.
+Project completed successfully.
