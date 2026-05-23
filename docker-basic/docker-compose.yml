@@ -1,0 +1,7 @@
+services:
+  nginx-basic:
+    build: .
+    container_name: nginx-basic
+    ports:
+      - "8080:80"
+    restart: unless-stopped
