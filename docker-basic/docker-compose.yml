@@ -1,7 +1,14 @@
 services:
   nginx-basic:
     build: .
+
+    # EN: Custom container name
+    # ES: Nombre personalizado del contenedor
     container_name: nginx-basic
+
+    # EN: Expose container on port 8080
+    # ES: Exponer contenedor en el puerto 8080
     ports:
       - "8080:80"
+
     restart: unless-stopped
