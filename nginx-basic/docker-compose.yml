@@ -1,0 +1,18 @@
+services:
+  backend:
+    image: nginx:latest
+    container_name: nginx-basic-backend
+    volumes:
+      - ./app/index.html:/usr/share/nginx/html/index.html:ro
+    restart: unless-stopped
+
+  reverse-proxy:
+    image: nginx:latest
+    container_name: nginx-basic-proxy
+    ports:
+      - "8081:80"
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - backend
+    restart: unless-stopped
