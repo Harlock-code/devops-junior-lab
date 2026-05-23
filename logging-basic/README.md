@@ -185,7 +185,7 @@ Este tipo de stack se utiliza en entornos DevOps modernos para:
 
 ## Loki logs in Grafana
 
-![Loki Logs](screenshots/loki-logs.png)
+![Loki Logs](https://github.com/Harlock-code/devops-junior-lab/blob/main/logging-basic/screenshots/logs-grafana.png?raw=true)
 
 ## Loki datasource
 
