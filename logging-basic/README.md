@@ -181,6 +181,16 @@ Este tipo de stack se utiliza en entornos DevOps modernos para:
 
 ---
 
+# Screenshots
+
+## Loki logs in Grafana
+
+![Loki Logs](screenshots/loki-logs.png)
+
+## Loki datasource
+
+![Loki Datasource](screenshots/loki-datasource.png)
+
 # Resultado
 
 Sistema de logging centralizado funcionando correctamente mediante Loki y Promtail.
