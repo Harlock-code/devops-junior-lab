@@ -69,4 +69,4 @@ Proyecto completado correctamente.
 
 ## Screenshoot
 
-![Loki Logs](https://github.com/Harlock-code/devops-junior-lab/blob/main/logging-basic/screenshots/logs-grafana.png?raw=true)
+![Ansible Nginx](https://github.com/Harlock-code/devops-junior-lab/blob/main/ansible-basic/screenshots/nginx-ansible.png?raw=true)
