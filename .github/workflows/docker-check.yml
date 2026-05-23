@@ -1,4 +1,4 @@
-```yaml
+
 # EN: GitHub Actions workflow for Docker Compose validation
 # ES: Workflow de GitHub Actions para validar Docker Compose
 
@@ -47,4 +47,3 @@ jobs:
       # ES: Mensaje de validación correcta
       - name: Validation completed
         run: echo "Docker Compose validation successful"
-```
