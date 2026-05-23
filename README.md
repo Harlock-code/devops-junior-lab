@@ -1,3 +1,5 @@
+![Banner_junior]()
+
 # DevOps Junior Lab
 
 Repositorio orientado a proyectos DevOps y SysAdmin Junior con escenarios prácticos, pequeños y fáciles de explicar en entrevistas técnicas.
