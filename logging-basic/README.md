@@ -1,22 +1,22 @@
 # Logging Basic
 
-Mini proyecto DevOps Junior para centralizar logs usando Loki, Promtail y Grafana.
+Mini DevOps Junior project focused on centralized logging using Loki, Promtail, and Grafana.
 
 ---
 
-# Objetivo
+# Objective
 
-Aprender conceptos básicos de logging centralizado y observabilidad moderna mediante herramientas utilizadas en entornos DevOps reales.
+Learn the basic concepts of centralized logging and modern observability using tools commonly used in real DevOps environments.
 
-El stack permite:
-- recolectar logs Docker
-- centralizar logs
-- consultar logs desde Grafana
-- realizar troubleshooting
+The stack allows:
+- collecting Docker logs
+- centralizing logs
+- querying logs from Grafana
+- troubleshooting issues
 
 ---
 
-# Tecnologías
+# Technologies
 
 - Docker
 - Docker Compose
@@ -27,7 +27,7 @@ El stack permite:
 
 ---
 
-# Arquitectura
+# Architecture
 
 ```text
 Docker Containers
@@ -44,7 +44,7 @@ Grafana Explore
 
 ---
 
-# Estructura
+# Structure
 
 ```text
 logging-basic/
@@ -59,17 +59,17 @@ logging-basic/
 
 ---
 
-# Servicios desplegados
+# Deployed Services
 
-| Servicio | Puerto | Función |
+| Service | Port | Function |
 |---|---|---|
-| Loki | 3100 | Almacenamiento de logs |
-| Promtail | 9080 | Recolección de logs |
-| Grafana | 3001 | Visualización |
+| Loki | 3100 | Log storage |
+| Promtail | 9080 | Log collection |
+| Grafana | 3001 | Visualization |
 
 ---
 
-# Despliegue
+# Deployment
 
 ```bash
 docker-compose up -d
@@ -77,33 +77,33 @@ docker-compose up -d
 
 ---
 
-# Verificación
+# Verification
 
-## Ver contenedores
+## View containers
 
 ```bash
 docker ps
 ```
 
-## Ver logs Loki
+## View Loki logs
 
 ```bash
 docker logs logging-loki
 ```
 
-## Ver logs Promtail
+## View Promtail logs
 
 ```bash
 docker logs logging-promtail
 ```
 
-## Comprobar Loki
+## Check Loki status
 
 ```bash
 curl localhost:3100/ready
 ```
 
-Resultado esperado:
+Expected result:
 
 ```text
 ready
@@ -111,11 +111,11 @@ ready
 
 ---
 
-# Configuración Grafana
+# Grafana Configuration
 
-## Añadir datasource Loki
+## Add Loki datasource
 
-Tipo:
+Type:
 
 ```text
 Loki
@@ -124,60 +124,60 @@ Loki
 URL:
 
 ```text
-http://IP_DEL_SERVIDOR:3100
+http://SERVER_IP:3100
 ```
 
 ---
 
-# Query utilizada
+# Query Used
 
 ```text
 {job="docker"}
 ```
 
-Permite visualizar logs centralizados de contenedores Docker.
+This query allows viewing centralized Docker container logs.
 
 ---
 
-# Troubleshooting real
+# Real Troubleshooting
 
-Durante el proyecto ocurrió un problema donde Grafana no mostraba logs.
+During the project, an issue occurred where Grafana was not displaying logs.
 
-## Problema
+## Problem
 
 ```text
 No logs found
 ```
 
-## Causa
+## Cause
 
-Ruta incorrecta en Promtail:
+Incorrect Promtail path:
 
 ```yaml
 __path__: /var/log/docker-containers/*.log
 ```
 
-## Solución
+## Solution
 
-Corregir la ruta:
+Correct the path:
 
 ```yaml
 __path__: /var/log/docker-containers/*/*.log
 ```
 
-y reiniciar el stack.
+and restart the stack.
 
 ---
 
-# Utilidad real
+# Real-World Use Case
 
-Este tipo de stack se utiliza en entornos DevOps modernos para:
+This type of stack is commonly used in modern DevOps environments for:
 
 - troubleshooting
-- centralización de logs
+- centralized logging
 - debugging
-- observabilidad
-- análisis de errores
+- observability
+- error analysis
 
 ---
 
@@ -191,12 +191,14 @@ Este tipo de stack se utiliza en entornos DevOps modernos para:
 
 ![Loki Datasource](screenshots/loki-datasource.png)
 
-# Resultado
+---
 
-Sistema de logging centralizado funcionando correctamente mediante Loki y Promtail.
+# Result
+
+Centralized logging system successfully working using Loki and Promtail.
 
 ---
 
-# Estado
+# Status
 
-Proyecto completado correctamente.
+Project completed successfully.
