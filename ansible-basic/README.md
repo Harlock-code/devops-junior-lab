@@ -66,3 +66,7 @@ Se solucionó ejecutando el playbook con:
 ## Estado
 
 Proyecto completado correctamente.
+
+## Screenshoot
+
+![Loki Logs](https://github.com/Harlock-code/devops-junior-lab/blob/main/logging-basic/screenshots/logs-grafana.png?raw=true)
