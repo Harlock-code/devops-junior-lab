@@ -5,6 +5,8 @@ Mini proyecto DevOps Junior para automatizar backups y restores básicos usando 
 ## Objetivo
 
 Aprender conceptos básicos de backup y recuperación de datos mediante scripts simples y herramientas Linux.
+Este proyecto utiliza sincronización espejo mediante rsync.
+No implementa versionado ni snapshots históricos.
 
 El proyecto demuestra:
 
