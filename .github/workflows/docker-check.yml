@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - 'docker-basic/**'
+      - '.github/workflows/docker-check.yml'
+  workflow_dispatch:
 
 jobs:
   validate-docker:
