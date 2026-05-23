@@ -1,24 +1,24 @@
 # GitHub Actions Basic
 
-Mini proyecto DevOps Junior para automatizar validaciones Docker usando GitHub Actions.
+Mini DevOps Junior project focused on automating Docker validations using GitHub Actions.
 
 ---
 
-# Objetivo
+# Objective
 
-Aprender el funcionamiento básico de pipelines CI/CD mediante GitHub Actions.
+Learn the basic workflow of CI/CD pipelines using GitHub Actions.
 
-El workflow valida automáticamente el archivo:
+The workflow automatically validates the following file:
 
 ```text
 docker-basic/docker-compose.yml
 ```
 
-cada vez que se realiza un push en el repositorio.
+every time a push is made to the repository.
 
 ---
 
-# Tecnologías
+# Technologies
 
 - GitHub Actions
 - Docker
@@ -28,7 +28,7 @@ cada vez que se realiza un push en el repositorio.
 
 ---
 
-# Estructura
+# Structure
 
 ```text
 .github/
@@ -38,21 +38,21 @@ cada vez que se realiza un push en el repositorio.
 
 ---
 
-# Funcionamiento del workflow
+# Workflow Functionality
 
-Cuando se realiza un:
+When running:
 
 ```bash
 git push
 ```
 
-GitHub:
+GitHub automatically:
 
-1. Crea un runner Ubuntu temporal
-2. Clona el repositorio
-3. Ejecuta comandos automáticos
-4. Valida el Docker Compose
-5. Genera logs del proceso
+1. Creates a temporary Ubuntu runner
+2. Clones the repository
+3. Executes automated commands
+4. Validates the Docker Compose file
+5. Generates workflow logs
 
 ---
 
@@ -90,24 +90,26 @@ jobs:
 
 ---
 
-# Utilidad real
+# Real-World Use Case
 
-Este tipo de pipelines se utiliza en entornos DevOps reales para:
+These types of pipelines are commonly used in real DevOps environments to:
 
-- validar configuraciones
-- detectar errores automáticamente
-- automatizar testing
-- evitar despliegues rotos
-- mejorar calidad del código
-
----
-
-# Resultado
-
-Pipeline CI básica funcionando correctamente mediante GitHub Actions.
+- validate configurations
+- detect errors automatically
+- automate testing
+- prevent broken deployments
+- improve code quality
 
 ---
 
-# Estado
+# Result
+
+Basic CI pipeline successfully working with GitHub Actions.
+
+---
+
+# Status
+
+Project completed successfully.
 
 Proyecto completado correctamente.
