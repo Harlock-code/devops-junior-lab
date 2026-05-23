@@ -45,6 +45,7 @@ devops-junior-lab/
 ├── ansible-basic/
 ├── nginx-basic/
 ├── logging-basic/
+├── security-basic/
 ├── backup-basic/
 └── troubleshooting/
 ```
