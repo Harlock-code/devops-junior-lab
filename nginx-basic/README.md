@@ -1,23 +1,23 @@
 # Nginx Basic - Reverse Proxy
 
-Mini proyecto DevOps Junior para aprender conceptos básicos de reverse proxy usando Nginx y Docker Compose.
+Mini DevOps Junior project focused on learning the basics of reverse proxy using Nginx and Docker Compose.
 
 ---
 
-# Objetivo
+# Objective
 
-Desplegar un backend web detrás de un reverse proxy Nginx.
+Deploy a web backend behind an Nginx reverse proxy.
 
-El proyecto demuestra:
+The project demonstrates:
 - reverse proxy
 - proxy_pass
-- networking Docker
-- comunicación entre contenedores
-- validación HTTP
+- Docker networking
+- container communication
+- HTTP validation
 
 ---
 
-# Tecnologías
+# Technologies
 
 - Docker
 - Docker Compose
@@ -26,10 +26,10 @@ El proyecto demuestra:
 
 ---
 
-# Arquitectura
+# Architecture
 
 ```text
-Usuario
+User
    |
    v
 Reverse Proxy (Nginx)
@@ -40,7 +40,7 @@ Backend Container
 
 ---
 
-# Estructura
+# Structure
 
 ```text
 nginx-basic/
@@ -55,17 +55,17 @@ nginx-basic/
 
 ---
 
-# Configuración Reverse Proxy
+# Reverse Proxy Configuration
 
 ```nginx
 proxy_pass http://backend:80;
 ```
 
-Nginx reenvía tráfico HTTP al contenedor backend.
+Nginx forwards HTTP traffic to the backend container.
 
 ---
 
-# Despliegue
+# Deployment
 
 ```bash
 docker-compose up -d
@@ -73,7 +73,7 @@ docker-compose up -d
 
 ---
 
-# Verificación
+# Verification
 
 ```bash
 docker ps
@@ -82,7 +82,7 @@ curl localhost:8081
 
 ---
 
-# Resultado esperado
+# Expected Result
 
 ```html
 <h1>Backend App</h1>
@@ -91,31 +91,31 @@ curl localhost:8081
 
 ---
 
-# Utilidad real
+# Real-World Use Case
 
-Los reverse proxy se utilizan en entornos DevOps modernos para:
+Reverse proxies are commonly used in modern DevOps environments for:
 
-- balanceo
+- load balancing
 - routing
 - SSL
 - gateways
-- publicación de servicios
-- microservicios
+- service publishing
+- microservices
 
 ---
 
-# Resultado
+# Result
 
-Reverse proxy funcionando correctamente mediante Nginx y Docker Compose.
-
----
-
-# Estado
-
-Proyecto completado correctamente.
+Reverse proxy successfully working using Nginx and Docker Compose.
 
 ---
 
-# Screenshoot
+# Status
+
+Project completed successfully.
+
+---
+
+# Screenshot
 
 ![Nginx_Backend](https://github.com/Harlock-code/devops-junior-lab/blob/main/nginx-basic/screenshots/backend-nginx.png?raw=true)
