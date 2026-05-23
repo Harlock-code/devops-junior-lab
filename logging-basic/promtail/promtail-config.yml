@@ -1,18 +1,36 @@
 server:
+
+  # EN: Promtail HTTP listening port
+  # ES: Puerto HTTP de escucha de Promtail
   http_listen_port: 9080
+
   grpc_listen_port: 0
 
 positions:
+
+  # EN: Store log read positions
+  # ES: Guardar posiciones de lectura de logs
   filename: /tmp/positions.yml
 
 clients:
+
+  # EN: Loki endpoint for log shipping
+  # ES: Endpoint Loki para envío de logs
   - url: http://loki:3100/loki/api/v1/push
 
 scrape_configs:
   - job_name: docker-logs
+
     static_configs:
       - targets:
           - localhost
+
         labels:
+
+          # EN: Label for Docker logs
+          # ES: Etiqueta para logs Docker
           job: docker
+
+          # EN: Path to Docker container logs
+          # ES: Ruta de logs de contenedores Docker
           __path__: /var/log/docker-containers/*/*.log
