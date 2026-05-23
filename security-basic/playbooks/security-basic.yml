@@ -1,3 +1,6 @@
+# EN: Basic Linux security hardening with UFW and Fail2ban
+# ES: Hardening básico Linux con UFW y Fail2ban
+
 ---
 - name: Basic Linux security hardening
   hosts: localhost
@@ -5,6 +8,9 @@
   connection: local
 
   tasks:
+
+    # EN: Install firewall and intrusion prevention tools
+    # ES: Instalar firewall y herramientas anti-intrusión
     - name: Install security packages
       apt:
         name:
@@ -13,29 +19,39 @@
         state: present
         update_cache: true
 
+    # EN: Allow SSH connections
+    # ES: Permitir conexiones SSH
     - name: Allow SSH
       ufw:
         rule: allow
         port: "22"
         proto: tcp
 
+    # EN: Allow HTTP traffic
+    # ES: Permitir tráfico HTTP
     - name: Allow HTTP
       ufw:
         rule: allow
         port: "80"
         proto: tcp
 
+    # EN: Allow HTTPS traffic
+    # ES: Permitir tráfico HTTPS
     - name: Allow HTTPS
       ufw:
         rule: allow
         port: "443"
         proto: tcp
 
+    # EN: Enable firewall with default deny policy
+    # ES: Activar firewall con política deny por defecto
     - name: Enable UFW
       ufw:
         state: enabled
         policy: deny
 
+    # EN: Ensure Fail2ban service is running
+    # ES: Asegurar que Fail2ban esté en ejecución
     - name: Ensure Fail2ban is enabled and running
       service:
         name: fail2ban
