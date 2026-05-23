@@ -14,13 +14,6 @@ echo "Starting backup..."
 
 # EN: Synchronize source and backup directories
 # ES: Sincronizar directorios origen y backup
-#
-# -a  -> archive mode (preserve permissions, timestamps, etc.)
-# -v  -> verbose output
-# --delete -> remove files in backup that no longer exist in source
-#
-# -a  -> modo archivo (preserva permisos, fechas, etc.)
-# -v  -> salida detallada
 # --delete -> elimina archivos del backup que ya no existen en origen
 rsync -av --delete "$SOURCE_DIR" "$BACKUP_DIR"
 
