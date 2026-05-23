@@ -1,31 +1,48 @@
+# EN: GitHub Actions workflow for Docker Compose validation
+# ES: Workflow de GitHub Actions para validar Docker Compose
+
 name: Docker Compose Validation
 
-'on':
+on:
 
+  # EN: Run on Docker-related changes
+  # ES: Ejecutar en cambios relacionados con Docker
   push:
     paths:
       - 'docker-basic/**'
       - '.github/workflows/docker-check.yml'
 
+  # EN: Manual execution from GitHub UI
+  # ES: Ejecución manual desde GitHub
   workflow_dispatch:
 
 jobs:
 
   validate-docker:
 
+    # EN: Ubuntu runner
+    # ES: Runner Ubuntu
     runs-on: ubuntu-latest
 
     steps:
 
+      # EN: Clone repository
+      # ES: Clonar repositorio
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # EN: Show repository structure
+      # ES: Mostrar estructura del repositorio
       - name: Show repository structure
-        run: tree
+        run: ls -R
 
+      # EN: Validate Docker Compose syntax
+      # ES: Validar sintaxis Docker Compose
       - name: Validate Docker Compose file
         run: |
           docker compose -f docker-basic/docker-compose.yml config
 
+      # EN: Validation success message
+      # ES: Mensaje de validación correcta
       - name: Validation completed
         run: echo "Docker Compose validation successful"
