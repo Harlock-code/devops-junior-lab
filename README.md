@@ -1,4 +1,4 @@
-![Banner_junior]()
+![Banner_junior](https://github.com/Harlock-code/devops-junior-lab/blob/main/screenshots/bbaner_junior.png?raw=true)
 
 # DevOps Junior Lab
 
